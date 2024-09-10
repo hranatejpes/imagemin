@@ -46,7 +46,7 @@ def resize_and_convert(input_dir, output_dir, conversion_type = "webp", max_size
 		valid_extensions = ('.jpg', '.jpeg', '.png', '.heic')
 		output_extension = ".webp"
 	elif conversion_type.lower() == "jpg":
-		valid_extensions = ('.webp', '.heic')
+		valid_extensions = ('.webp', '.heic', '.png')
 		output_extension = ".jpg"
 	else:
 		print("Error: Conversion type is not valid. Use 'webp' or 'jpg'.")
