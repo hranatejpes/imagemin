@@ -91,7 +91,7 @@ def resize_and_convert(input_dir, output_dir, conversion_type = "webp", max_size
 						img = img.convert("RGB")
 						img.save(output_path, "JPEG", quality=85, optimize=True)
 
-					print(f"File '{file}' was successfully converted and save to '{output_filename}'.")
+					print(f"File '{file}' was successfully converted and saved to '{output_filename}'.")
 
 				except Exception as e:
 					print(f"Error while processing '{file}': {e}")
